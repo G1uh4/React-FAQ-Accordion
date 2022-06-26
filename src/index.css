@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url("https://wallpaperaccess.com/full/84248.png");
+}
+
+.style--faqAccordion{
+  margin: 2em;
+}
+
+.style-faq-question{
+  color: white;
+  font-size: 1.5em;
+  transition: 500ms;
+}
+
+.style-faq-question:active,
+.style-faq-question:hover{
+  font-size: 1.6em;
+  text-shadow: 3px 5px 12px black;
+}
+
+
+
+.style-faq-answer{
+  font-size: 0.8em;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  padding: 1.5em;
+  width: 50em;
+  padding: 1.3em;
+  margin: 1em auto;
+  transition: 500ms;
+  animation: showBox 500ms forwards;
+}
+
+@keyframes showBox {
+  0%{
+    margin-left: -200em;
+  }
+  100%{
+    margin-left: 30em;
+  }
+}
+
+.style-faq-answer:active,
+.style-faq-answer:hover{
+  padding: 2em;
+  box-shadow: 4px 5px 12px whitesmoke;
+}
+
+.style--btn{
+  width: 10em;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  background: rgba(22, 91, 192, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(22, 91, 192, 0.02);
+  transition: 500ms;
+}
+
+.style--btn:active,
+.style--btn:hover{
+  width: 15em;
+}
+
+.boxDiss{
+  animation: boxHide 500ms forwards;
+}
+
+@keyframes boxHide {
+  0%{
+    margin-left: 30em;
+  }
+  100%{
+    margin-left: -200em;
+  }
+}
+
+
+.display-social-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 2em;
+}
+
+.styleLinkedIn,
+.styleFacebook,
+.styleGitHub{
+  width: 5em;
+  transition: 500ms;
+}
+
+.styleLinkedIn:hover,
+.styleFacebook:hover,
+.styleGitHub:hover{
+  width: 7em;
+
+}
